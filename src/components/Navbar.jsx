@@ -22,8 +22,8 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Blog", path: "/blog" },
+    { name: "Projects", path: "/portfolio" },
+   
     { name: "Contact", path: "/contact" },
   ]
 
@@ -39,9 +39,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">G</span>
+              <span className="text-white font-bold text-lg">P</span>
             </div>
-            <span className="text-white font-semibold text-xl">Gerold</span>
+            <span className="text-white font-semibold text-xl">Pooja </span>
           </Link>
 
           {/* Desktop Menu */}
