@@ -4,6 +4,10 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
+import AyurvedaWebImg from "../assets/SOA.jpg"
+import MauliBusinessImg from "../assets/MB.jpg"
+import RaychemImg from "../assets/RW.jpg"
+import PortfolioImg from "../assets/PW.jpg"
 
 const RecentWorks = () => {
   const ref = useRef(null)
@@ -11,28 +15,36 @@ const RecentWorks = () => {
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      category: "Web Development",
-      image: "/placeholder.svg?height=300&width=400",
+      title: "School Of Ayurveda",
+      category: "Health Sector",
+      image: AyurvedaWebImg,
       tech: ["React", "Node.js", "MongoDB"],
+      liveLink: "https://schoolofayurveda.in/",
+      githubLink: "https://github.com/your-username/school-of-ayurveda"
     },
     {
-      title: "Mobile Banking App",
+      title: "Mauli Business",
       category: "Mobile App",
-      image: "/placeholder.svg?height=300&width=400",
+      image: MauliBusinessImg,
       tech: ["React Native", "Express", "PostgreSQL"],
+      liveLink: "https://maulibusiness.com/",
+      githubLink: "https://github.com/LOOP-MATRIX/MauliBusinessClient"
     },
     {
       title: "Portfolio Website",
       category: "Web Design",
-      image: "/placeholder.svg?height=300&width=400",
+      image: PortfolioImg,
       tech: ["Next.js", "Tailwind", "Framer Motion"],
+      liveLink: "https://your-portfolio.example.com",
+      githubLink: "https://github.com/your-username/portfolio"
     },
     {
-      title: "Task Management",
+      title: "Raychem RPG Website",
       category: "Full Stack",
-      image: "/placeholder.svg?height=300&width=400",
+      image: RaychemImg,
       tech: ["MERN Stack", "Socket.io"],
+      liveLink: "https://www.raychemrpg.com/",
+      githubLink: "https://github.com/Pooja2308kadav/Raychem"
     },
   ]
 
@@ -60,23 +72,33 @@ const RecentWorks = () => {
               transition={{ delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-2xl bg-gray-800/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300"
             >
-              <div className="aspect-video overflow-hidden">
+              <div className="aspect-video overflow-hidden ">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-fit group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-purple-400 text-sm">{project.category}</span>
                   <div className="flex space-x-2">
-                    <button className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-purple-500 transition-colors">
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-purple-500 transition-colors"
+                    >
                       <FaExternalLinkAlt size={12} />
-                    </button>
-                    <button className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-purple-500 transition-colors">
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-purple-500 transition-colors"
+                    >
                       <FaGithub size={12} />
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
