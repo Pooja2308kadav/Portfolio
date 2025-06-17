@@ -32,10 +32,10 @@ const Stats = () => {
   const isInView = useInView(ref, { amount: 0.5 }) // not "once"
 
   const stats = [
-    { number: 14, label: "Years Experience", suffix: "+" },
-    { number: 50, label: "Project Completed", suffix: "+" },
-    { number: 1500, label: "Happy Clients", suffix: "" },
-    { number: 14, label: "Awards Winner", suffix: "+" },
+    { number: 1, label: "Years Experience", suffix: "+" },
+    { number: 10, label: "Project Completed", suffix: "+" },
+    { number: 10, label: "Happy Clients", suffix: "+" },
+    { number: 5, label: "Awards Winner", suffix: "+" },
   ]
 
   return (

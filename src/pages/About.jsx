@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FaDownload, FaUser, FaGraduationCap, FaAward } from "react-icons/fa"
+import Img from "../assets/Img.png"
 
 const About = () => {
   return (
@@ -12,9 +13,9 @@ const About = () => {
             <div className="relative w-80 h-80 mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-3xl opacity-30"></div>
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src={Img}
                 alt="About Gerold"
-                className="relative z-10 w-full h-full object-cover rounded-full border-4 border-purple-500/30"
+                className="relative z-10 w-full h-full "
               />
             </div>
           </motion.div>
@@ -37,10 +38,13 @@ const About = () => {
               also skilled in UI/UX design, ensuring that every project I work on not only functions perfectly but also
               provides an outstanding user experience.
             </p>
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full hover:shadow-lg transition-all duration-200 flex items-center">
-              <FaDownload className="mr-2" />
-              Download CV
-            </button>
+             <a
+  href="/PoojaResume.pdf"
+  download="PoojaKadav_Resume.pdf"
+  className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full hover:shadow-lg transition-all duration-200 text-center"
+>
+  Download CV
+</a>
           </motion.div>
         </div>
 
@@ -53,9 +57,9 @@ const About = () => {
           >
             <FaUser className="text-4xl text-purple-400 mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2">Personal Info</h3>
-            <p className="text-gray-400">Age: 28</p>
-            <p className="text-gray-400">Location: London, UK</p>
-            <p className="text-gray-400">Languages: English, Spanish</p>
+            <p className="text-gray-400">Age: 23</p>
+            <p className="text-gray-400">Location: Virar , India</p>
+            <p className="text-gray-400">Languages: English, Marathi</p>
           </motion.div>
 
           <motion.div
@@ -66,9 +70,9 @@ const About = () => {
           >
             <FaGraduationCap className="text-4xl text-purple-400 mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2">Education</h3>
-            <p className="text-gray-400">BSc Computer Science</p>
-            <p className="text-gray-400">University of London</p>
-            <p className="text-gray-400">2016 - 2020</p>
+            <p className="text-gray-400">B.Tech in Computer Science</p>
+            <p className="text-gray-400">Dbatu University</p>
+            <p className="text-gray-400">2021 - 2024</p>
           </motion.div>
 
           <motion.div
@@ -79,9 +83,9 @@ const About = () => {
           >
             <FaAward className="text-4xl text-purple-400 mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2">Achievements</h3>
-            <p className="text-gray-400">14+ Awards Won</p>
-            <p className="text-gray-400">50+ Projects Completed</p>
-            <p className="text-gray-400">1.5K+ Happy Clients</p>
+            <p className="text-gray-400">5+ Awards Won</p>
+            <p className="text-gray-400">10+ Projects Completed</p>
+            <p className="text-gray-400">10+ Happy Clients</p>
           </motion.div>
         </div>
       </div>

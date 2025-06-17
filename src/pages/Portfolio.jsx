@@ -62,7 +62,7 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto py-16">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            My <span className="text-purple-400">Portfolio</span>
+            My <span className="text-purple-400">Work</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and expertise in web development and design.

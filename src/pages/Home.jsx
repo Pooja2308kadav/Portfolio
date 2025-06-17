@@ -8,7 +8,7 @@ import RecentWorks from "../components/RecentWorks"
 import Experience from "../components/ExperiencePage"
 import Skills from "../components/Skills"
 import Testimonials from "../components/Testimonials"
-import RecentBlogs from "../components/RecentBlogs"
+
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </div>
       <Testimonials />
-      <RecentBlogs />
+    
     </motion.div>
   )
 }

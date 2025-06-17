@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { FaPalette, FaMobile, FaCode, FaRocket } from "react-icons/fa"
+import { FaReact, FaServer, FaDatabase, FaCloudUploadAlt } from "react-icons/fa"
 
 const Services = () => {
   const ref = useRef(null)
@@ -11,31 +11,31 @@ const Services = () => {
 
   const services = [
     {
-      icon: <FaPalette />,
-      title: "Branding Design",
+      icon: <FaReact />,
+      title: "Frontend Development",
       description:
-        "I break down complex user experience problems to create integrity focused solutions that connect billions of people",
+        "Building responsive and dynamic interfaces using React.js to ensure seamless user experiences across devices.",
       color: "from-purple-500 to-pink-500",
     },
     {
-      icon: <FaMobile />,
-      title: "UI/UX Design",
+      icon: <FaServer />,
+      title: "Backend Development",
       description:
-        "I break down complex user experience problems to create integrity focused solutions that connect billions of people",
+        "Creating robust RESTful APIs and handling server-side logic using Node.js and Express for scalable web applications.",
       color: "from-green-500 to-teal-500",
     },
     {
-      icon: <FaCode />,
-      title: "Web Design",
+      icon: <FaDatabase />,
+      title: "Database Integration",
       description:
-        "I break down complex user experience problems to create integrity focused solutions that connect billions of people",
+        "Designing efficient MongoDB schemas and integrating Mongoose for high-performance, flexible data storage solutions.",
       color: "from-blue-500 to-cyan-500",
     },
     {
-      icon: <FaRocket />,
-      title: "App Design",
+      icon: <FaCloudUploadAlt />,
+      title: "Deployment & Hosting",
       description:
-        "I break down complex user experience problems to create integrity focused solutions that connect billions of people",
+        "Deploying full-stack applications using Vercel, Render, and cloud services, ensuring CI/CD and live monitoring.",
       color: "from-orange-500 to-red-500",
     },
   ]
@@ -50,8 +50,7 @@ const Services = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Quality Services</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            We put your ideas and thus your wishes in the form of a unique web project that inspires you and your
-            customers.
+            I offer powerful and modern full-stack solutions using the MERN stack to turn your ideas into real-world web applications.
           </p>
         </motion.div>
 

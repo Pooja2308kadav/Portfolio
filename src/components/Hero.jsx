@@ -52,7 +52,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 mb-8"
           >
            <a
-  href="/PoojaKadav.Resume.pdf"
+  href="/PoojaResume.pdf"
   download="PoojaKadav_Resume.pdf"
   className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full hover:shadow-lg transition-all duration-200 text-center"
 >
