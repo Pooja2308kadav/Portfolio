@@ -70,14 +70,14 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-center">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="group bg-gray-800/60 backdrop-blur-md p-6 rounded-2xl hover:bg-gray-800/80 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-purple-500/20"
+              className="group bg-gray-800/60 backdrop-blur-md p-6 rounded-2xl hover:bg-gray-800/80 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-purple-500/20 flex-col items-center justify-center"
             >
               <div
                 className={`w-14 h-14 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform`}
@@ -94,9 +94,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <button className="mt-6 text-purple-400 hover:text-purple-300 font-medium transition-colors">
-                Learn More →
-              </button>
+             
             </motion.div>
           ))}
         </div>
