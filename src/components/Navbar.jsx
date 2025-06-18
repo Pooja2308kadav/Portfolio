@@ -60,13 +60,15 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-
+                  <Link to={"/contact"}>
           <button className="hidden md:block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-200" >
+             Hire Me
+                   </button>
+              </Link>
+          
            
-           <Link to={"/contact"}>
-            Hire Me
-            </Link>
-          </button>
+         
+   
 
           {/* Mobile menu button */}
           <div className="md:hidden">
