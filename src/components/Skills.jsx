@@ -17,12 +17,12 @@ const Skills = () => {
   const isInView = useInView(ref, { amount: 0.3 }) // removed `once: true` for dynamic animation
 
   const skills = [
-    { name: "React.js", level: 95, icon: <FaReact /> },
-    { name: "Node.js", level: 90, icon: <FaNodeJs /> },
+    { name: "React.js", level: 90, icon: <FaReact /> },
+    { name: "React Vite", level: 95, icon: <FaMobile /> },
+    { name: "JavaScript", level: 92, icon: <FaNodeJs /> },
+    // { name: "Tailwind", level: 90, icon: < FaCode/> },
     { name: "MongoDB", level: 85, icon: <FaDatabase /> },
-    { name: "React Vite", level: 80, icon: <FaMobile /> },
-    // { name: "UI/UX Design", level: 88, icon: <FaPalette /> },
-    { name: "JavaScript", level: 92, icon: <FaCode /> },
+    { name: "Tailwind", level: 88, icon: <FaPalette /> },
   ]
 
   return (

@@ -20,31 +20,31 @@ const RecentWorks = () => {
       title: "School Of Ayurveda",
       category: "Health Sector",
       image: AyurvedaWebImg,
-      tech: ["React", "Node.js", "MongoDB"],
+      tech: ["MERN STACK" ],
       liveLink: "https://schoolofayurveda.in/",
       githubLink: "https://github.com/your-username/school-of-ayurveda"
     },
     {
       title: "Mauli Business",
-      category: "Mobile App",
+      category: "Educational Web App",
       image: MauliBusinessImg,
-      tech: ["React Native", "Express", "PostgreSQL"],
+      tech: ["MERN STACK", "Styled components"],
       liveLink: "https://maulibusiness.com/",
       githubLink: "https://github.com/LOOP-MATRIX/MauliBusinessClient"
     },
     {
       title: "Portfolio Website",
-      category: "Web Design",
+      category: "Portfolio Design",
       image: PortfolioImg,
-      tech: ["Next.js", "Tailwind", "Framer Motion"],
+      tech: ["MERN STACK", "Tailwind"],
       liveLink: "https://your-portfolio.example.com",
       githubLink: "https://github.com/your-username/portfolio"
     },
     {
       title: "Raychem RPG Website",
-      category: "Full Stack",
+      category: "Electronics Eccomerce",
       image: RaychemImg,
-      tech: ["MERN Stack", "Socket.io"],
+      tech: ["MERN STACK", "Styled components"],
       liveLink: "https://www.raychemrpg.com/",
       githubLink: "https://github.com/Pooja2308kadav/Raychem"
     },
@@ -58,7 +58,7 @@ const RecentWorks = () => {
     },
       {
       title: "Drunk Cafe Website",
-      category: "Full Stack",
+      category: "Food Management",
       image: DrunkCafeimg,
       tech: ["MERN Stack", "Styled-Components"],
       liveLink: "https://www.raychemrpg.com/",
