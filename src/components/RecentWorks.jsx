@@ -8,6 +8,8 @@ import AyurvedaWebImg from "../assets/SOA.jpg"
 import MauliBusinessImg from "../assets/MB.jpg"
 import RaychemImg from "../assets/RW.jpg"
 import PortfolioImg from "../assets/PW.jpg"
+import ToursAndTravels from "../assets/TTW.jpg"
+import DrunkCafeimg from "../assets/DCWEB.jpg"
 
 const RecentWorks = () => {
   const ref = useRef(null)
@@ -46,6 +48,22 @@ const RecentWorks = () => {
       liveLink: "https://www.raychemrpg.com/",
       githubLink: "https://github.com/Pooja2308kadav/Raychem"
     },
+     {
+      title: "Tours And Travels Website",
+      category: "Full Stack",
+      image: ToursAndTravels,
+      tech: ["MERN Stack", "Styled-Components"],
+      liveLink: "https://www.raychemrpg.com/",
+      githubLink: "https://github.com/Pooja2308kadav/Raychem"
+    },
+      {
+      title: "Drunk Cafe Website",
+      category: "Full Stack",
+      image: DrunkCafeimg,
+      tech: ["MERN Stack", "Styled-Components"],
+      liveLink: "https://www.raychemrpg.com/",
+      githubLink: "https://github.com/Pooja2308kadav/Raychem"
+    }
   ]
 
   return (
