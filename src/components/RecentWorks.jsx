@@ -53,16 +53,16 @@ const RecentWorks = () => {
       category: "Full Stack",
       image: ToursAndTravels,
       tech: ["MERN Stack", "Styled-Components"],
-      liveLink: "https://www.raychemrpg.com/",
-      githubLink: "https://github.com/Pooja2308kadav/Raychem"
+      liveLink: "/",
+      githubLink: "https://github.com/Pooja2308kadav/Tours-and-Travels"
     },
       {
       title: "Drunk Cafe Website",
       category: "Food Management",
       image: DrunkCafeimg,
       tech: ["MERN Stack", "Styled-Components"],
-      liveLink: "https://www.raychemrpg.com/",
-      githubLink: "https://github.com/Pooja2308kadav/Raychem"
+      liveLink: "/",
+      githubLink: "https://github.com/Pooja2308kadav/DrunkCafe"
     }
   ]
 
