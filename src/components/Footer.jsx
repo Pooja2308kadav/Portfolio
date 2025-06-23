@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FaGithub, FaLinkedin, FaInstagram, FaHeart } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   const navLinks = [
@@ -54,13 +55,14 @@ const Footer = () => {
           >
             Let's Create Together!
           </motion.h2>
+ <Link to={"/contact"}>
           <motion.a
             variants={childVariants}
-            href="/contact"
             className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-2.5 rounded-full hover:shadow-[0_0_15px_rgba(168,85,247,0.4)] transition-all duration-300 text-base font-semibold"
           >
             Connect Now
           </motion.a>
+          </Link>
         </motion.div>
 
         <motion.div 
